@@ -1,4 +1,4 @@
 # m-Aarti
 Aarti Library
 
-[आरती हरतालिके](marathi/आरती हरतालिके.txt)
+[आरती हरतालिके](marathi/आरती हरतालिके.md)
