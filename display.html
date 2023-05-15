@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Test Page</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 8px;
+            margin: 2px 1px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #3b5998;
+        }
+
+        .button2:hover {
+            background-color: #3b5998;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="margin:auto;">
+            <div class="w3-center w3-padding-16" style="background-color: #3b5998; color: white">e-Aarti</div>
+            <div class="w3-center w3-padding-16" style="background-color: #3b5998">
+                <button class="button button2" onclick="window.location.href='list.html'">Back to List</button>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:150px;">
+        <div border = "1" id = "title" style="text-align: center; font-weight: bolder; font-size: x-large">
+        </div><br />
+        <div border = "1" id = "aarti" style="text-align: center">
+        </div>
+    </div>
+    <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        var id = getParameterByName('id');
+        var lang = getParameterByName('lang');
+        fetch("aarti-data.json")
+            .then(response => response.json())
+            .then(data => {
+                if (lang == 'mar'){
+                    let marTitle = data[id].marathiTitle;
+                    let marAarti = data[id].marathiAarti.replace(/\n/g, "<br />");
+                    document.querySelector("#title").innerHTML += `${marTitle}`;
+                    document.querySelector("#aarti").innerHTML += `${marAarti}`;
+                }
+                else if (lang == 'eng'){
+                    let engTitle = data[id].englishTitle;
+                    let engAarti = data[id].englishAarti.replace(/\n/g, "<br />");
+                    document.querySelector("#title").innerHTML += `${engTitle}`;
+                    document.querySelector("#aarti").innerHTML += `${engAarti}`;
+                }
+            })
+    </script>
+</body>
+</html>

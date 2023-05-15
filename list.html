@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>e-Aarti</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <style>
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid #3b5998;
+    }
+
+    .button2:hover {
+      background-color: #3b5998;
+      color: white;
+    }
+    ul {
+      padding:0;
+      width:100%;
+      text-align:center;
+    }
+    li {
+      margin:10px;
+      list-style-type: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top menu -->
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="margin:auto;background-color: #008CBA">
+      <div class="w3-center w3-padding-16" style="background-color: #3b5998; color: white">e-Aarti</div>
+      <div class="w3-center w3-padding-16" style="background-color: #3b5998; color: white">
+        <input  id="myInput" onkeyup="myFunction()" placeholder="Search"
+                style="text-align: center;
+                  border-radius: 12px; border: 2px solid #3b5998; font-size: 16px;" type="text">
+        <label style="font-size: 14px; color: white">
+          <input checked name="colorRadio"
+                 type="radio" value="mar"> मराठी</label>
+        <label style="font-size: 14px; color: white">
+          <input name="colorRadio" type="radio"
+                 value="eng"> English</label>
+      </div>
+    </div>
+  </div>
+  <!-- !PAGE CONTENT! -->
+
+  <div class="mar selectt" style="margin-top:150px; text-align:center;">
+    <ul id="myUL" style="list-style-position: inside; text-align:center">
+      <li>
+        <a class="button button2"
+           href='display.html?id=a&amp;lang=mar'>२१ गणपती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=b&amp;lang=mar'>आरती हरतालिके</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=c&amp;lang=mar'>आरती कचेश्वरांची</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=d&amp;lang=mar'>आरती मंगळागौरी</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=e&amp;lang=mar'>अंबेचा धावा</a>
+      </li>
+
+      <li>
+        <a class="button button2"
+           href='display.html?id=f&amp;lang=mar'>अथर्वशीर्ष</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=g&amp;lang=mar'>भवानीची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=h&amp;lang=mar'>दत्ताची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=i&amp;lang=mar'>धाव धाव बा मोरेश्वरा</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=j&amp;lang=mar'>ज्ञानदेवाची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=k&amp;lang=mar'>गणपतीची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=l&amp;lang=mar'>गणपतीला दुर्वा</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=m&amp;lang=mar'>घालीन लोटांगण</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=n&amp;lang=mar'>गोंदवलेकर महाराजांची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=o&amp;lang=mar'>गोंधळ</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=p&amp;lang=mar'>गुरुवारची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=q&amp;lang=mar'>जय देवी हरतालिके</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=r&amp;lang=mar'>जय गणेश देवा</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=s&amp;lang=mar'>कोल्हापुरी देवीची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=t&amp;lang=mar'>महालक्ष्मीची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=u&amp;lang=mar'>माहूर गडावरी</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=v&amp;lang=mar'>मंत्रपुष्पांजली</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=w&amp;lang=mar'>मारुतीची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=x&amp;lang=mar'>मिठा पिठाचा जोगवा</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=y&amp;lang=mar'>नानापरिमळ दुर्वा</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=z&amp;lang=mar'>नवरात्रीची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=A&amp;lang=mar'>निरोप</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=B&amp;lang=mar'>ॐ जय जगदीश हरे</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=C&amp;lang=mar'>ओवाळू आरतीला (मंगळागौर)</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=D&amp;lang=mar'>प्रदक्षिणा</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=E&amp;lang=mar'>पुष्पांजली</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=F&amp;lang=mar'>शंकराची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=G&amp;lang=mar'>शेंदूर लाल चढायो</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=H&amp;lang=mar'>देवीची कर्पूर आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=I&amp;lang=mar'>दुर्गा देवीची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=J&amp;lang=mar'>कृष्णाची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=K&amp;lang=mar'>रामचंद्रजी की आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=L&amp;lang=mar'>सप्तश्रृंग देवीची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=M&amp;lang=mar'>तू सुखकर्ता</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=N&amp;lang=mar'>तुकारामाची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=O&amp;lang=mar'>विठ्ठलाची आरती</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=P&amp;lang=mar'>येई हो विठ्ठले</a>
+      </li>
+    </ul>
+  </div>
+  <div class="eng selectt" style="margin-top:150px; text-align:center;">
+    <ul id="myUL2" style="list-style-position: inside; text-align:center">
+      <li>
+        <a class="button button2"
+           href='display.html?id=a&amp;lang=eng'>21 Ganpati</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=b&amp;lang=eng'>Aarti Hartalike</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=c&amp;lang=eng'>Aarti Kacheshwaranchi</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=d&amp;lang=eng'>Aarti Mangalagauri</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=e&amp;lang=eng'>Ambecha Dhava</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=f&amp;lang=eng'>Atharvashirsh</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=g&amp;lang=eng'>Bhavanichi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=h&amp;lang=eng'>Dattachi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=i&amp;lang=eng'>Dhav Dhav Ba Moreshwara</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=j&amp;lang=eng'>Dnyandevachi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=k&amp;lang=eng'>Ganpatichi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=l&amp;lang=eng'>Ganpatila Durva</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=m&amp;lang=eng'>Ghalin Lotangan</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=n&amp;lang=eng'>Gondavlekar Maharajanchi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=o&amp;lang=eng'>Gondhal</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=p&amp;lang=eng'>Guruvarchi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=q&amp;lang=eng'>Jai Devi Hartalike</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=r&amp;lang=eng'>Jai Ganesh Deva</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=s&amp;lang=eng'>Kolhapuri Devichi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=t&amp;lang=eng'>Mahalakshmichi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=u&amp;lang=eng'>Mahur Gadavari</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=v&amp;lang=eng'>Mantrapushpanjali</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=w&amp;lang=eng'>Marutichi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=x&amp;lang=eng'>Mitha Pithacha Jogva</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=y&amp;lang=eng'>Nanaparimal Durva</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=z&amp;lang=eng'>Navratrichi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=A&amp;lang=eng'>Nirop</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=B&amp;lang=eng'>Om Jai Jagdish Hare</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=C&amp;lang=eng'>Ovalu aartila (Mangalagaur)</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=D&amp;lang=eng'>Pradakshina</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=E&amp;lang=eng'>Pushpanjali</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=F&amp;lang=eng'>Shankarachi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=G&amp;lang=eng'>Shendur Lal Chadhayo</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=H&amp;lang=eng'>Devichi Karpur Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=I&amp;lang=eng'>Durga Devichi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=J&amp;lang=eng'>Krushnachi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=K&amp;lang=eng'>Ramchandraji Ki Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=L&amp;lang=eng'>Saptshrunga Devichi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=M&amp;lang=eng'>Tu Sukhkarta</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=N&amp;lang=eng'>Tukaramachi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=O&amp;lang=eng'>Vitthalachi Aarti</a>
+      </li>
+      <li>
+        <a class="button button2"
+           href='display.html?id=P&amp;lang=eng'>Yei Ho Vitthale</a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('input[type="radio"]').click(function() {
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".selectt").not(targetBox).hide();
+        $(targetBox).show();
+      });
+    });
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      var inputValue = $('input[name="colorRadio"]:checked').val();
+      console.log(inputValue);
+      if(inputValue == 'mar'){
+        ul = document.getElementById("myUL");
+      }else{
+        ul = document.getElementById("myUL2");
+      }
+
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
