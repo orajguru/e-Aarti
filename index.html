@@ -68,7 +68,7 @@
 
   <!-- !PAGE CONTENT! -->
 
-  <div class="mar selectt" style="margin-top:160px; text-align:center;">
+  <div id="mar" class="desc" style="margin-top:160px; text-align:center;">
     <ul id="myUL" style="list-style-position: inside; text-align:center">
       <li>
         <a class="button button2"
@@ -241,7 +241,7 @@
       </li>
     </ul>
   </div>
-  <div class="eng selectt" style="margin-top:150px; text-align:center;">
+  <div id="eng" class="desc" style="margin-top:150px; text-align:center;">
     <ul id="myUL2" style="list-style-position: inside; text-align:center">
       <li>
         <a class="button button2"
@@ -416,12 +416,12 @@
 
   <script>
     $(document).ready(function() {
-      $('input[type="radio"]').click(function() {
-        var inputValue = $(this).attr("value");
-        var targetBox = $("." + inputValue);
-        $(".selectt").not(targetBox).hide();
-        $(targetBox).show();
-      });
+        $("#eng").hide();
+        $("input[name$='colorRadio']").click(function() {
+            var test = $(this).val();
+            $("div.desc").hide();
+            $("#" + test).show();
+        });
     });
     function myFunction() {
       var input, filter, ul, li, a, i, txtValue;
